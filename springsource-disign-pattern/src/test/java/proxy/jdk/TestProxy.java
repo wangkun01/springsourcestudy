@@ -1,4 +1,4 @@
-package proxy;
+package proxy.jdk;
 
 import org.junit.Test;
 import proxy.jdk.Monitor;
