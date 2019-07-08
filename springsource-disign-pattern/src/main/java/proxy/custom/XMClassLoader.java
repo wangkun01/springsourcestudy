@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
- * 小明版的classloader
+ * 小明版的classloader,把动态生成的class的内容加载到JVM中
  *
  * @author wangkun
  * @date 2019-07-07 17:27

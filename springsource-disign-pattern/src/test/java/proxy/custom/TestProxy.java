@@ -19,6 +19,7 @@ public class TestProxy {
     @Test
     public void testProxy(){
         XMStudent student = new XMStudent();
-        new XMMonitor().createTarget(student);
+        XMPerson person = (XMPerson) new XMMonitor().createTarget(student);
+        person.giveMoney();
     }
 }

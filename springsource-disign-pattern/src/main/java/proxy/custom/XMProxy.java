@@ -46,7 +46,7 @@ public class XMProxy {
         manager.close();
         //4.将class文件中的内容动态加载到JVM
         Class proxyClass = xmClassLoader.findClass("$Proxy2");
-        //5.返回被代理后的对象
+        //5.返回被代理后的对象,调用XMInvocationhandler 的 invoke方法
 
         Constructor constructor = proxyClass.getConstructor(XMInvocationHandler.class);
         return constructor.newInstance(h);
