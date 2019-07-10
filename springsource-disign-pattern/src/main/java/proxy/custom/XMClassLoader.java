@@ -37,6 +37,7 @@ public class XMClassLoader extends ClassLoader {
                 while ((len = in.read(buff)) != -1) {
                     out.write(buff, 0, len);
                 }
+                classFile.delete();
                 return defineClass(className, out.toByteArray(), 0, out.size());
             }
 

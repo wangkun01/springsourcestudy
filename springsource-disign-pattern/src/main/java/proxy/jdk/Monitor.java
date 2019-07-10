@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * 代理模式：字节码重组
  * 带代理类
  * @author wangkun
  * @date 2019-07-06 18:32

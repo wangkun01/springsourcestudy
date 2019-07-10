@@ -1,14 +1,10 @@
 package proxy.custom;
 
-import com.sun.org.apache.bcel.internal.generic.LNEG;
-
-import javax.management.relation.RelationNotFoundException;
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
@@ -49,6 +45,7 @@ public class XMProxy {
         //5.返回被代理后的对象,调用XMInvocationhandler 的 invoke方法
 
         Constructor constructor = proxyClass.getConstructor(XMInvocationHandler.class);
+        javaFile.delete();
         return constructor.newInstance(h);
 
         }catch (Exception e) {

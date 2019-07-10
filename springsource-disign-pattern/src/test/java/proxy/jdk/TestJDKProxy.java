@@ -9,12 +9,14 @@ import sun.misc.ProxyGenerator;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
+/**必须
+ *
+ * 代理模式三个必要条件：1.执行者和被代理对象 2.事情必须做，但自己不专业 3.需要获取到被代理对象的资料（即对象的引用）
  * JDK版的动态代理实现测试
  * @author wangkun
  * @date 2019-07-06 18:44
  */
-public class TestProxy {
+public class TestJDKProxy {
 
     @Test
     public void testProxy() throws IOException {
