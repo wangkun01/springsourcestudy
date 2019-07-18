@@ -1,8 +1,5 @@
 package factory.abstra;
 
-import factory.Audi;
-import factory.BMW;
-import factory.Benz;
 import factory.Car;
 
 /**
